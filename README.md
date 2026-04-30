@@ -1,6 +1,6 @@
 # Lexer-Parser
 
-## Analizador Lexicografico y Sintactico - Lenguaje TINY
+# Analizador Lexicografico y Sintactico - Lenguaje TINY
 
 Este proyecto consiste en el desarrollo de un compilador (Lexer y Parser) para el lenguaje TINY. Fue realizado de forma grupal en un equipo de 4 integrantes.
 
