@@ -10,18 +10,18 @@ El software resultante de la implementacion del lexer aceptara como entrada una 
 
 ## Especificación de la gramática
 
-VN = {T Code, Body, DecVarList, DecVar, DecVarBody, Statement, StatementList, StatementBody,
+- VN = {T Code, Body, DecVarList, DecVar, DecVarBody, Statement, StatementList, StatementBody,
 Goto, Assingment, Op, MatOp, BoolOp, Lvalue, Rvalue, Conditional, CompExpr, CompOp}
-VT = {id, num, program, var, . , ; , =, :=, int, bool, true, f alse, begin, end, if, else,
+- VT = {id, num, program, var, . , ; , =, :=, int, bool, true, f alse, begin, end, if, else,
 not, <, >, <>, <=, >=, +, −, ∗, ==, (, ), · · · , and, or}
-S = T Code
+- S = T Code
 
 ## Producciones
 
 P = {T Code −→ program id . Body
 Body −→ begin StatementList end
 | var DecVar DecVarList begin StatementList end
-DecV arList −→ DecVarList DecV ar
+DecVarList −→ DecVarList DecVar
 | λ
 DecVar −→ id : DecVarBody
 DecVarBody −→ int ( num · · · num ) = num ;
